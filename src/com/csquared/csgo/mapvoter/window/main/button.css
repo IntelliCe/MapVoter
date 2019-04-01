@@ -1,0 +1,83 @@
+/* DEFAULT */
+
+#btDust {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_dust_2.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btInferno {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_inferno.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btMirage {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_mirage.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btTrain {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_train.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btCobble {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_cobble.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btCache {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_cache.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btOverpass {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_overpass.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+#btNuke {
+    -fx-background-image: url('/com/csquared/csgo/mapvoter/resource/map_nuke.png');
+    -fx-background-color:#00000000;
+    -fx-border-width: 0;
+}
+
+/* DISABLED */
+
+#btDust: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btInferno: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btMirage: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btTrain: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btCobble: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btCache: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btOverpass: disabled {
+    -fx-opacity: 0.3;
+}
+
+#btNuke: disabled {
+    -fx-opacity: 0.3;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@button.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csquared.csgo.mapvoter.window.main.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/com/csquared/csgo/mapvoter/resource/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/com/csquared/csgo/mapvoter/resource/title_background_await.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbTitle" alignment="CENTER" layoutX="100.0" layoutY="13.0" prefHeight="55.0" prefWidth="800.0" text="正在等待 BAN/PICK" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView fx:id="imgDustStatus" layoutX="390.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgMirageStatus" layoutX="390.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgInfernoStatus" layoutX="390.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgOverpassStatus" layoutX="390.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgTrainStatus" layoutX="390.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgCacheStatus" layoutX="390.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgNukeStatus" layoutX="390.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <ImageView fx:id="imgCobbleStatus" layoutX="390.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@/com/csquared/csgo/mapvoter/resource/map_status_not_in_map_pool.png" />
+           </image></ImageView>
+      <Button fx:id="btDust" layoutX="40.0" layoutY="100.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btMirage" layoutX="40.0" layoutY="160.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btInferno" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btOverpass" layoutX="40.0" layoutY="280.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btTrain" layoutX="40.0" layoutY="340.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btCache" layoutX="40.0" layoutY="400.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btNuke" layoutX="40.0" layoutY="460.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Button fx:id="btCobble" layoutX="40.0" layoutY="520.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" />
+      <Label alignment="TOP_RIGHT" layoutX="546.0" layoutY="139.0" prefHeight="64.0" prefWidth="114.0" text="BAN/PICK 服务器&#10;&#10;BAN/PICK 类型&#10;权限开放等级" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbInfo" alignment="TOP_LEFT" layoutX="688.0" layoutY="139.0" prefHeight="64.0" prefWidth="258.0" text="0.0.0.0 [Disconnected]&#10;&#10;标准 BAN/PICK (1 Selected)&#10;仅部分指定权限玩家" textFill="WHITE" />
+      <Label fx:id="lbIntroduction" alignment="TOP_LEFT" layoutX="546.0" layoutY="258.0" prefHeight="43.0" prefWidth="407.0" text="【标准 BAN/PICK】由两名权限玩家进行赛事标准 BAN/PICK，图池保留最后1张地图。" textFill="WHITE" />
+      <Label fx:id="lbNicknames" alignment="TOP_LEFT" layoutX="546.0" layoutY="379.0" prefHeight="189.0" prefWidth="98.0" text="Item 1&#10;Item 2&#10;Item 3" textFill="WHITE" />
+      <Label fx:id="lbAuths" alignment="TOP_LEFT" layoutX="656.0" layoutY="379.0" prefHeight="189.0" prefWidth="61.0" text="Item 1&#10;Item 2&#10;Item 3" textFill="WHITE" />
+      <TextArea fx:id="taLog" editable="false" layoutX="730.0" layoutY="344.0" prefHeight="207.0" prefWidth="232.0" stylesheets="@text_area.css" text="** NJUPT MAJOR MapVoter **" wrapText="true" />
+      <TextField fx:id="tfInput" layoutX="730.0" layoutY="554.0" onKeyPressed="#onInputBoxKeyPressed" prefHeight="23.0" prefWidth="177.0" promptText="(输入消息)" style="-fx-text-inner-color: white; -fx-background-color: transparent;" />
+      <Button fx:id="btSend" layoutX="907.0" layoutY="553.0" mnemonicParsing="false" onAction="#onSendButtonClicked" prefHeight="23.0" prefWidth="53.0" style="-fx-background-color: #004C66; -fx-text-fill: #FFFFFF;" text="发送" />
+      <Button fx:id="btChangeId" layoutX="537.0" layoutY="553.0" mnemonicParsing="false" onAction="#onChangeIdButtonClicked" prefHeight="23.0" prefWidth="61.0" style="-fx-background-color: #004C66; -fx-text-fill: #FFFFFF;" text="修改 ID" />
+   </children>
+</Pane>
